@@ -1,0 +1,37 @@
+<html ng-app="phpApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+
+<body ng-controller="IndexCtrl">
+    <p>
+
+        <table border=1 cellspacing=5 cellpadding=5>
+            <tr ng-repeat="person in people">
+                <td>{{person.name}}</td>
+                <td>{{person.age}}</td>
+            </tr>
+        </table>
+
+    </p>
+    <p>
+
+        <table border=1 cellspacing=5 cellpadding=5>
+            <tr ng-repeat="animal in animals">
+                <td>{{animal.animal}}</td>
+                <td>{{animal.fur}}</td>
+            </tr>
+        </table>
+
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="indexCtrl.js"></script>
+</body>
+
+</html>
